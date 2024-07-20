@@ -1,0 +1,47 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  padding: 9px 42px;
+  min-width: 120px;
+  min-height: 54px;
+  // font-family: $font-family;
+  color: $secondary;
+  cursor: pointer;
+
+  &.primary {
+    background: linear-gradient(
+      262.39deg,
+      #5e6ad2 9.88%,
+      rgba(73, 81, 155, 0.693617) 41.5%,
+      rgba(52, 58, 101, 0.395883) 77.59%,
+      rgba(32, 34, 47, 0.1) 100%
+    );
+    border: 1px solid #5e6ad2;
+  }
+}
+
+// Media queries for responsiveness
+
+@media only screen and (max-width: 1520px) {
+  .btn {
+    padding: 9px 16px;
+    font-size: 21px;
+    min-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .btn {
+    padding: 9px 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .btn {
+    min-height: 40px;
+  }
+}

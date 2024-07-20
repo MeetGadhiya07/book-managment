@@ -1,0 +1,123 @@
+@mixin margin($value...) {
+  margin: $value;
+}
+
+@mixin marginTop($value) {
+  margin-top: $value;
+}
+
+@mixin marginBottom($value) {
+  margin-bottom: $value;
+}
+
+@mixin marginLeft($value) {
+  margin-left: $value;
+}
+
+@mixin marginRight($value) {
+  margin-right: $value;
+}
+
+@mixin padding($value...) {
+  padding: $value;
+}
+
+@mixin paddingTop($value) {
+  padding-top: $value;
+}
+
+@mixin paddingBottom($value) {
+  padding-bottom: $value;
+}
+
+@mixin paddingLeft($value) {
+  padding-left: $value;
+}
+
+@mixin paddingRight($value) {
+  padding-right: $value;
+}
+
+@mixin transition($property, $duration, $timingFun: "") {
+  @if $timingFun== "" {
+    -webkit-transition: $property $duration;
+    transition: $property $duration;
+  } @else {
+    -webkit-transition: $property $duration $timingFun;
+    transition: $property $duration $timingFun;
+  }
+}
+
+//responsive breakpoint
+@mixin xs-up {
+  @media screen and (min-width: 420px) {
+    @content;
+  }
+}
+@mixin sm-up {
+  @media screen and (min-width: 577px) {
+    @content;
+  }
+}
+@mixin md-up {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin lg-up {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin xl-up {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin xxl-up {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin xxxl-up {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin xs-down {
+  @media screen and (max-width: 419px) {
+    @content;
+  }
+}
+@mixin sm-down {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+@mixin md-down {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin lg-down {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin xl-down {
+  @media screen and (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin xxl-down {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin xxxl-down {
+  @media screen and (max-width: 1399px) {
+    @content;
+  }
+}
+//responsive breakpoint
