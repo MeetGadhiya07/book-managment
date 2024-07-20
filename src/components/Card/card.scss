@@ -1,0 +1,79 @@
+.book-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+
+  .ant-card-head {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .cover-image {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    .ant-btn {
+      width: 30%;
+      font-size: 14px;
+      transition: background-color 0.3s, color 0.3s;
+
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
+
+    .details-button {
+      background-color: #1890ff;
+      color: #fff;
+      border: none;
+
+      &:hover {
+        background-color: #40a9ff;
+      }
+    }
+
+    .update-button {
+      background-color: #52c41a;
+      color: #fff;
+      border: none;
+
+      &:hover {
+        background-color: #73d13d;
+      }
+    }
+
+    .delete-button {
+      background-color: #ff4d4f;
+      color: #fff;
+      border: none;
+
+      &:hover {
+        background-color: #ff7875;
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-.login-container {
+.signup-container {
   height: 100vh;
   display: grid;
   place-content: center;
@@ -12,6 +12,10 @@
     @media (max-width: 600px) {
       border-radius: 0px;
     }
+  }
+
+  .form-group {
+    margin-bottom: 30px;
   }
 
   .login-title {
@@ -40,10 +44,6 @@
     &:focus {
       border: 2px solid rgba(0, 0, 0, 0.18) !important;
     }
-  }
-
-  .form-group {
-    margin-bottom: 30px;
   }
 
   .login-btn {

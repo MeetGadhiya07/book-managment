@@ -1,13 +1,9 @@
 import React from "react";
 import "./assets/styles/app.scss";
-import Login from "./components/LoginForm/Login";
+import AppRoutes from "./routes/Routes";
 
-function App() {
-  return (
-    <>
-      <Login />
-    </>
-  );
-}
+const App: React.FC = () => {
+  return <AppRoutes />;
+};
 
 export default App;
